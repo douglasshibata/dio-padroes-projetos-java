@@ -1,5 +1,6 @@
 package me.dio.web.projeto;
 
+import me.dio.web.projeto.facade.Facade;
 import me.dio.web.projeto.singleton.SingletonEager;
 import me.dio.web.projeto.singleton.SingletonLazy;
 import me.dio.web.projeto.singleton.SingletonLazyHolder;
@@ -44,5 +45,10 @@ public class Teste {
 		robo.mover();
 		robo.mover();
 		robo.mover();
+
+		// Facade
+
+		Facade facade = new Facade();
+		facade.migrarCliente("Sem Nome", "9863875");
 	}
 }
